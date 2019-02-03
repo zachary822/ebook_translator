@@ -3,6 +3,8 @@ import ebooklib
 from ebooklib import epub
 from lxml import etree
 
+__all__ = ['book_to_traditional']
+
 
 def book_to_traditional(book: epub.EpubBook) -> epub.EpubBook:
     try:
