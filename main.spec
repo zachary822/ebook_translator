@@ -37,6 +37,10 @@ exe = EXE(pyz,
           runtime_tmpdir=None,
           console=False)
 app = BUNDLE(exe,
-             name='book_converter.app',
+             name='ebook_converter.app',
              icon=None,
-             bundle_identifier=None)
+             bundle_identifier=None,
+             info_plist={
+                 'NSHighResolutionCapable': 'True',
+                 'NSRequiresAquaSystemAppearance': 'False'
+             })

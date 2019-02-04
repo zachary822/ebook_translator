@@ -22,8 +22,8 @@ class ConvertBook(threading.Thread):
 
 
 class MainWidget(QWidget):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
 
         self.resize(250, 150)
         self.setWindowTitle('Ebook Converter')
